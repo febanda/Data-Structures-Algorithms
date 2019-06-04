@@ -6,8 +6,15 @@
 // maxChar('abcccccccd')=== 'c'
 
 function maxChar(str){
-
-
+    const chars = {}
+    for(let char of str){
+        if(chars[char] != 1){
+            chars[char] = 1
+        }else{
+            chars[char]++
+        }
+    }
+    return chars 
 
 }
 
