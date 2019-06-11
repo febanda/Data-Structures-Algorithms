@@ -31,3 +31,26 @@ function maxChar(str){
 
 
 
+
+function maxChar(arr){
+    const chars = {}
+    const count = 1
+
+    for(let char of arr){
+        if(!chars[char]){
+            chars[char] = 1
+        }else{
+            chars[char]++
+        }
+    }
+
+    for(let char in chars){
+        if(chars[char] === count){
+            return chars[char]
+        }
+    }
+
+
+}
+
+

@@ -18,3 +18,4 @@ function chunk(array, size){
     }
     return chunked 
 }
+
