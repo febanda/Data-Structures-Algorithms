@@ -45,16 +45,12 @@
 
 
 //solution 2
-function anagrams(stringA, stringB){
-    return cleanUp(stringA) === cleanUp(stringB)
-
-}
-
 
 function cleanUp(str){
-    return str.replace(/[^\w]/g, "").toLowerCase().split('').sort().join('')
-    
+    return str.replace(/[^\w]/g, "").toLowerCase().split('').sort().join
 }
 
+function charMap(str1, str2){
+    return cleanUp(str1) === cleanUp(str2)
 
-
+}
